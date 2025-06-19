@@ -1,16 +1,35 @@
-# BatalhaNavak.c
+# Batalha Naval com Habilidades Especiais
 
-Jogo simples de Batalha Naval em C para tabuleiro 10x10.
+Execute através do JOGO.exe
+Um jogo simples de batalha naval em C onde você posiciona navios no tabuleiro e pode usar habilidades especiais.
 
-## Como funciona
+# Como Funciona
 
-- O usuário posiciona 4 navios de 3 casas cada: um horizontal, um vertical e dois diagonais.
-- O programa valida se os navios estão dentro do tabuleiro, se têm o tamanho correto e se não se sobrepõem.
-- Ao final, mostra o tabuleiro com os navios posicionados.
+# 1. Posicionamento dos Navios
 
-## Regras
+4 navios no total, cada um ocupa 3 casas
+- Navio 1: Horizontal (escolha linha e colunas inicial/final)
+- Navio 2: Vertical (escolha coluna e linhas inicial/final)
+- Navio 3: Diagonal (escolha coordenadas inicial/final)
+- Navio 4: Diagonal (escolha coordenadas inicial/final)
+# 2. Habilidades Especiais
 
-- Todos os valores digitados devem ser de 1 a 10.
-- Os navios não podem se sobrepor.
-- Os navios diagonais devem realmente estar na diagonal (diferença de 2 nas linhas e colunas).
+Após posicionar os navios, você pode usar uma habilidade:
 
+- Cone: Desenha um triângulo 5x5
+- Cruz: Desenha uma cruz 5x5
+- Octaedro: Desenha um losango 5x5
+
+# Regras
+
+- Tabuleiro é 10x10 (linhas 1-10, colunas 1-10)
+- Navios não podem se sobrepor
+- Navios devem ter exatamente 3 casas de tamanho
+- Navios diagonais devem formar uma diagonal perfeita
+- Habilidades podem sair parcialmente do tabuleiro (só a parte dentro será desenhada)
+
+# Representação no Tabuleiro
+
+0 = Água (vazio)
+3 = Navio
+7 = Habilidade especial
